@@ -7,28 +7,37 @@
 }
 
 #grid-container{
-	width: 100%;
 	margin: 0 auto;
-	margin-left: 480px;
 	margin-top: 10px;
+	height: 400px;
+	width: 400px;
 }
 
 .square{
 	background-color: white;
 }
 
-#title{
+.head-container{
 	margin: 0 auto;
-	margin-left: 600px;
+	width: 400px;
 }
+
+#start-button{
+	margin-left: 130px;
+	width: 100px;
+	background: orange;
+}
+
+#title{
+	text-align: center;
+	color: #E5FFCC;
+	margin-right: 50px;
+}
+
+
 
 body{
 	background-color: teal;
 }
 
-#start-button{
-	margin: 0 auto;
-	margin-left: 630px;
-	width: 100px;
-	margin-top: 10px;
-}
+
