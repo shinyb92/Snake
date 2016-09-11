@@ -34,6 +34,17 @@
 	margin-right: 50px;
 }
 
+#score-container{
+	text-align: center;
+	margin: 0 auto;
+	width: 400px;
+	color: #E5FFCC;
+}
+
+#score{
+	font-size: 30px;
+}
+
 
 
 body{
