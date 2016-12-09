@@ -1,3 +1,7 @@
+$.getScript("js/extensions.js", function(){
+  console.log('extensions.js loaded'); 
+});
+
 function Game (){
 	this.display = new GameDisplay();
 	this.numberOfRows = 20;
@@ -44,7 +48,7 @@ Game.prototype.moveSnakeForward = function() {
 	var ateFood = snake.ateFood(foodLocation);
 
 		if(ateFood){
-			snake.body.unshift(foodLocation)
+			snake.body.unshift(foodLocation);
 			this.prevFood = foodLocation;
 			this.placeFoodRandomly();
 			this.score++
@@ -52,7 +56,7 @@ Game.prototype.moveSnakeForward = function() {
 				this.highScore = this.score
 			}	
 			this.updateScore();
-			if(this.gameSpeed > 80){
+			if(this.gameSpeed > 80 ){
 				this.increaseSpeed();
 				clearInterval(this.gameLoop);
 				this.gameLoop = setInterval(function() {
